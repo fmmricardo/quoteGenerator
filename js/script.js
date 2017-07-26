@@ -1,13 +1,13 @@
 // event listener to respond to "Show another quote" button clicks
 // when user clicks anywhere on the button, the "printQuote" function is called
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
-document.getElementById('loadQuote').addEventListener("click", IntervalOn , false);
+document.getElementById('loadQuote').addEventListener("click", IntervalOff , false);
 
 //initialiye variables
  var outputdiv = "";
  var getrandomQuote="";
  var quoteList = [];
- //var intervalID = setInterval(printQuote,30);
+ var quoteInterval= setInterval(printQuote,30);
 
 
 
@@ -82,15 +82,22 @@ document.getElementById('loadQuote').addEventListener("click", IntervalOn , fals
         bgColor();
   };
 
-// problem with this function
+//problem with this function
   function IntervalOn(){
 
-    IntervalOff();
-    intervalID = setInterval(printQuote,30);
+    if (IntervalOn()){
 
+    IntervalOff();
+    quoteInterval = setInterval(printQuote,30);
+
+  }else{
+
+      IntervalOn();
   }
+}
+
+
   //quoteInterval = setInterval(printQuote,30);
   function IntervalOff(){
-    clearInterval(intervalID);
-
+    clearInterval(quoteInterval);
   }
