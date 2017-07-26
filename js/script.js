@@ -3,11 +3,11 @@
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 document.getElementById('loadQuote').addEventListener("click", IntervalOn , false);
 
-//initialiye riables
+//initialiye variables
  var outputdiv = "";
  var getrandomQuote="";
  var quoteList = [];
- var intervalID = setInterval(printQuote,30);
+ //var intervalID = setInterval(printQuote,30);
 
 
 
@@ -49,7 +49,7 @@ document.getElementById('loadQuote').addEventListener("click", IntervalOn , fals
   }
 
 
-// use the ramdom quote genetated and add it into the HTML
+// use the random quote genetated and add it into the HTML
   //function printQuote
 
 
@@ -82,7 +82,7 @@ document.getElementById('loadQuote').addEventListener("click", IntervalOn , fals
         bgColor();
   };
 
-
+// problem with this function
   function IntervalOn(){
 
     IntervalOff();
