@@ -3,7 +3,7 @@ var quoteList = [
   {
     quote:'Ignorance is a poison and knowledge will nourish',
     source:'KRS-One',
-    citation:'“Word From Our Sponsor,” from Boogie Down Productions’ Criminal Minded',
+    citation:'Word From Our Sponsor, from Boogie Down Productions’ Criminal Minded',
     date:'1987',
     tag: 'music'
 
@@ -11,9 +11,9 @@ var quoteList = [
   {
     quote:'Whatever you goin through, could always be much worse,Don’t make a mistake, mistakin’ your blessings for a curse.',
     source:'Joe Budden',
-    citation:'Welcome to Real Life,” Mood Muzik 4: A Turn for the Worst',
+    citation:'Welcome to Real Life, Mood Muzik 4: A Turn for the Worst',
     date:'2010',
-    tag: 'music',
+    tag: 'music'
   },
   {
     quote:'The sky is falling, the wind is calling,Stand for something, or die in the morning.',
@@ -32,14 +32,14 @@ var quoteList = [
   {
     quote:'I’m only 19 but my mind is older When things get for real, my warm heart turns cold.',
     source:'Prodigy',
-    citation:'Shook Ones Part II,” from Mobb Deep’s The Infamous',
+    citation:'Shook Ones Part II, from Mobb Deep’s The Infamous',
     date:'1987',
     tag: 'music'
   },
   {
-    quote:'“Obstacles don’t have to stop you. If you run into a wall, don’t turn around and give up. Figure out how to climb it, go through it, or work around it.” ',
+    quote:'Obstacles don’t have to stop you. If you run into a wall, don’t turn around and give up. Figure out how to climb it, go through it, or work around it.',
     source:'Michael Jordan',
-    citation:'Shook Ones Part II,” from Mobb Deep’s The Infamous',
+    citation:'Shook Ones Part II,from Mobb Deep’s The Infamous',
     date:'1984-2003',
     tag: 'sports'
   },
@@ -51,17 +51,15 @@ var quoteList = [
     tag: 'music'
   },
   {
-    quote:'“Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy.”',
+    quote:'Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy.',
     source:'Norman Vincent Peale',
     citation:' ',
-    date:'',
     tag: 'motivational'
   },
   {
-    quote:'“Aim for the moon. If you miss, you may hit a star.”',
+    quote:'Aim for the moon. If you miss, you may hit a star.',
     source:'W. Clement Stone',
     citation:' ',
-    date:'',
     tag: 'motivational'
   }
 ]
