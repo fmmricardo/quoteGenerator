@@ -1,22 +1,19 @@
 // event listener to respond to "Show another quote" button clicks
 // when user clicks anywhere on the button, the "printQuote" function is called
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
-//document.getElementById('loadQuote').addEventListener("click", IntervalOn , false);
+
 
 //initialize variables
  var outputdiv = '';
-
  var message;
  var quoteList ;
  var quotesCopyArray=[];
-
  var timer = window.setInterval(printQuote, 30000);
 
 
 // function print message
 
  function printMessage (message){
-
   var outputdiv = document.getElementById('quote-box');
       outputdiv.innerHTML = message;
       console.log(message);
@@ -25,12 +22,9 @@ document.getElementById('loadQuote').addEventListener("click", printQuote, false
 //generate a random quote
   //the quotes already displayed are merged in a new array quotesCopyArray
   function getRandomQuote(){
-
     if (quotesCopyArray[0]=== undefined){
         quotesCopyArray= quotesCopyArray.concat(quoteList);
-
     }
-
       var randomNumber = Math.floor(Math.random()*quotesCopyArray.length);
       var getRandomQuotes = quotesCopyArray[randomNumber];
     //Don't display a random quote more than once until ALL quotes from the array have been displayed.
@@ -44,7 +38,6 @@ document.getElementById('loadQuote').addEventListener("click", printQuote, false
   //generate the random background
 
   function generateRBG() {
-
     var r = Math.floor(Math.random()* 250);
     var b = Math.floor(Math.random()* 250);
     var g = Math.floor(Math.random()* 250);
@@ -66,7 +59,6 @@ document.getElementById('loadQuote').addEventListener("click", printQuote, false
   //function printQuote
 
   function printQuote (){
-
       //get random quote
        var getRandomQuotes = getRandomQuote();
       //return quote
@@ -77,7 +69,6 @@ document.getElementById('loadQuote').addEventListener("click", printQuote, false
       if (getRandomQuotes.citation){
       message+= '<span class="citation">' + getRandomQuotes.citation +  '</span>'
       }
-
       if(getRandomQuotes.date){
         // return the date
         message+= '<span class="year">' + getRandomQuotes.date + '</span>'
