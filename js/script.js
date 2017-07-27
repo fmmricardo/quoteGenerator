@@ -5,12 +5,12 @@ document.getElementById('loadQuote').addEventListener("click", printQuote, false
 
 //initialize variables
  var outputdiv = '';
- //var getRandomQuote='';
- //var message;
+
+ var message;
  var quoteList ;
  var quotesCopyArray=[];
 
-var timer = window.setInterval(printQuote, 3000);
+ var timer = window.setInterval(printQuote, 30000);
 
 
 // function print message
@@ -23,7 +23,7 @@ var timer = window.setInterval(printQuote, 3000);
 }
 
 //generate a random quote
-  // alternative snipet
+  //the quotes already displayed are merged in a new array quotesCopyArray
   function getRandomQuote(){
 
     if (quotesCopyArray[0]=== undefined){
@@ -33,6 +33,9 @@ var timer = window.setInterval(printQuote, 3000);
 
       var randomNumber = Math.floor(Math.random()*quotesCopyArray.length);
       var getRandomQuotes = quotesCopyArray[randomNumber];
+    //Don't display a random quote more than once until ALL quotes from the array have been displayed.
+      // splice () method changes the contents of an array by removing existing elements and/or adding new elements.
+
       quotesCopyArray.splice(randomNumber, 1);
       return getRandomQuotes;
     }
@@ -70,7 +73,7 @@ var timer = window.setInterval(printQuote, 3000);
       message= '<p class="quote">' + getRandomQuotes.quote + '</p>'
       //return the source
       message+= '<p class="source">' + getRandomQuotes.source + '</p>'
-      //reuurn the citation
+      //return the citation
       if (getRandomQuotes.citation){
       message+= '<span class="citation">' + getRandomQuotes.citation +  '</span>'
       }
@@ -88,7 +91,8 @@ var timer = window.setInterval(printQuote, 3000);
 
         printMessage(message);
         bgColor();
+        //Refresh the quote after a set amount of time
         window.clearTimeout(timer);
-        timer = window.setInterval(printQuote, 3000);
+        timer = window.setInterval(printQuote, 30000);
 
   };
