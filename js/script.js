@@ -27,7 +27,7 @@ var timer = window.setInterval(printQuote, 3000);
   function getRandomQuote(){
 
     if (quotesCopyArray[0]=== undefined){
-        quotesCopyArray[0]= quotesCopyArray.concat(quoteList);
+        quotesCopyArray= quotesCopyArray.concat(quoteList);
 
     }
 
