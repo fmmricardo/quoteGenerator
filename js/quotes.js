@@ -1,39 +1,10 @@
 //array with the quotes
-var quoteList = [
-  {
-    quote:'Ignorance is a poison and knowledge will nourish',
-    source:'KRS-One',
-    citation:'Word From Our Sponsor, from Boogie Down Productions’ Criminal Minded',
-    date:'1987',
-    tag: 'music'
-
-  },
+var quote = [
   {
     quote:'Whatever you goin through, could always be much worse,Don’t make a mistake, mistakin’ your blessings for a curse.',
     source:'Joe Budden',
     citation:'Welcome to Real Life, Mood Muzik 4: A Turn for the Worst',
     date:'2010',
-    tag: 'music'
-  },
-  {
-    quote:'The sky is falling, the wind is calling,Stand for something, or die in the morning.',
-    source:'Kendrick Lamar',
-    citation:'HiiPower,” Section.80',
-    date:'2011',
-    tag: 'music'
-  },
-  {
-    quote:'In this life ain’t no happy endings Only pure beginnings followed by years of sinning and fake repentance.',
-    source:'J. Cole',
-    citation:'Runaway,” Born Sinner',
-    date:'2013',
-    tag: 'music'
-  },
-  {
-    quote:'I’m only 19 but my mind is older When things get for real, my warm heart turns cold.',
-    source:'Prodigy',
-    citation:'Shook Ones Part II, from Mobb Deep’s The Infamous',
-    date:'1987',
     tag: 'music'
   },
   {
@@ -53,12 +24,6 @@ var quoteList = [
   {
     quote:'Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy.',
     source:'Norman Vincent Peale',
-    citation:' ',
-    tag: 'motivational'
-  },
-  {
-    quote:'Aim for the moon. If you miss, you may hit a star.',
-    source:'W. Clement Stone',
     citation:' ',
     tag: 'motivational'
   }
