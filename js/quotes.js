@@ -1,5 +1,5 @@
 //array with the quotes
-var quote = [
+var quotes = [
   {
     quote:'Whatever you goin through, could always be much worse,Don’t make a mistake, mistakin’ your blessings for a curse.',
     source:'Joe Budden',
