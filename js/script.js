@@ -4,9 +4,8 @@ document.getElementById('loadQuote').addEventListener("click", printQuote, false
 
 
 //initialize variables
- //var outputdiv = '';
+
  var message;
- var quotes ;
  var quotesCopyArray=[];
  var timer = window.setInterval(printQuote, 30000);
 
