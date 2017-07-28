@@ -65,32 +65,32 @@ document.getElementById('loadQuote').addEventListener("click", printQuote, false
       //get random quote
        var randomQuote = getRandomQuote();
       //return quote
-      quote= '<p class="quote">' + randomQuote.quote + '</p>';
+      message= '<p class="quote">' + randomQuote.quote + '</p>';
       //return the source
       message+= '<p class="source">' + randomQuote.source + '</p>';
 
       // Check if quote has a citation attached
       if (randomQuote.citation){
         //return the citation
-          quote+= '<span class="citation">' + randomQuote.citation +  '</span>';
+          message+= '<span class="citation">' + randomQuote.citation +  '</span>';
       }
       // Check if quote has a date attached
       if(randomQuote.date){
         // return the date
-          quote+= '<span class="year">' + randomQuote.date + '</span>';
+          message+= '<span class="year">' + randomQuote.date + '</span>';
       }
       // Check if quote has a citation attached
       if (randomQuote.citation){
         // return the citation
-          quote+= '<span class="citation">' + randomQuote.citation +  '</span>';
+          message+= '<span class="citation">' + randomQuote.citation +  '</span>';
       }
       // Check if quote has a tag attached
       if (randomQuote.tag){
         // return the tag
-          quote+= '<p class="citation">' + randomQuote.tag +  '</p>';
+          message+= '<p class="citation">' + randomQuote.tag +  '</p>';
       }
 
-        printMessage(quote);
+        printMessage(message);
         bgColor();
         //Refresh the quote after a set amount of time
         window.clearTimeout(timer);
