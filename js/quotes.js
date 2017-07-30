@@ -1,5 +1,5 @@
 //array with the quotes
-var quotes = [
+const quotes = [
   {
     quote:'Whatever you goin through, could always be much worse,Don’t make a mistake, mistakin’ your blessings for a curse.',
     source:'Joe Budden',
@@ -25,6 +25,13 @@ var quotes = [
     quote:'Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy.',
     source:'Norman Vincent Peale',
     citation:' ',
+    tag: 'motivational'
+  },
+  {
+    quote:'Ignorance is a poison and knowledge will nourish.',
+    source:'KRS-One',
+    citation:'Word From Our Sponsor,” from Boogie Down Productions’ Criminal Minded ',
+    date:'1987',
     tag: 'motivational'
   }
 ]
